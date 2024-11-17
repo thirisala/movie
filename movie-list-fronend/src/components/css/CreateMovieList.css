@@ -1,0 +1,124 @@
+/* CreateMovieList.css */
+
+.create-movie-list-container {
+    padding: 2rem;
+    margin: 0 auto;
+    border: 6px solid #797575;
+    margin-top: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #666464;
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.create-movie-list-header {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffd700;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-input {
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255, 253, 253, 0.673);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-input:focus {
+    background-color: rgba(255, 253, 253, 0.673);
+    border-color: #ffd700;
+    outline: none;
+}
+
+.add-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .create-movie-list-container {
+        padding: 1.5rem;
+        margin-top: 20%;
+        width: 80%;
+    }
+
+    .create-movie-list-header {
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .form-input {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .add-button {
+        padding: 0.6rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-movie-list-container {
+        padding: 1rem;
+        margin-top: 15%;
+        background-color: #333;
+        width: 80%; 
+    }
+
+    .create-movie-list-header {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .form-input {
+        height: 40px;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+
+    .add-button {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+}

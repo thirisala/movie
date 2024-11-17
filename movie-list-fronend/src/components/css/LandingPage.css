@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+@keyframes changeBackground {
+    0% { background-image: url("https://wallpapers.com/images/hd/animation-movies-3840-x-2160-wallpaper-f3ra0cyl5yhwfv8c.jpg"); }
+    20% { background-image:url("https://images2.alphacoders.com/131/1311525.jpeg") ; }
+    40% { background-image:url("https://wallpapers.com/images/hd/animation-movies-2560-x-1600-wallpaper-tul71djabv77cn8f.jpg") ; }
+    60% { background-image:url("https://wallpapers.com/images/hd/animation-movies-1197-x-704-wallpaper-nlgddr8e66de5g41.jpg") ; }
+    80% { background-image:url("https://wallpapers.com/images/hd/animation-movies-3840-x-2160-wallpaper-c3df9230sl47lv7f.jpg") ; }
+    100% { background-image: url("https://wallpapers.com/images/hd/animation-movies-3840-x-2160-wallpaper-c3df9230sl47lv7f.jpg"); }
+}
+
+.landing-page {
+    padding: 20px;
+    background-color: #b6b6b6;
+    animation: changeBackground 30s infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-page-search-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.landing-page-search-form:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.landing-page-search-input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.landing-page-search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #9e3333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-page-search-button:hover {
+    background-color: #7a2727;
+}
+
+.landing-page-movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.landing-page-movie-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-page-movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page-movie-poster {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.landing-page-movie-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.landing-page-movie-year {
+    margin-top: 5px;
+    color: #666;
+}
+
+.landing-page-add-list-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9e3333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.landing-page-add-list-button:hover {
+    background-color: #7a2727;
+}
+
+.landing-page-lists-container {
+    margin-top: 20px;
+}
+
+.landing-page-search-message{
+    color: #fff;
+}
